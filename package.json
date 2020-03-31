@@ -37,5 +37,5 @@
 	},
 	"browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
 	"keywords": [],
-	"description": "My curriculum vitae as a vue project"
+	"description": "My curriculum vitae as Vue project"
 }
