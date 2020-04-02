@@ -24,8 +24,6 @@
 </template>
 
 <script>
-import * as VMasker from "@/assets/libs/vanilla-masker.min.js";
-
 export default {
 	name: "Header",
 	data: () => {
@@ -39,7 +37,12 @@ export default {
 	},
 	methods: {
 		formatPhone: phoneNumber => {
-			return VMasker.toPattern(phoneNumber, "(99) 9 9999-9999");
+			let stringPhoneNumber = phoneNumber.toString();
+			let formatedPhone = stringPhoneNumber.replace(
+				/^(?:(\d{2})(\d{1})?(\d{4})(\d{4}))$/g,
+				"($1) $2 $3-$4"
+			);
+			return formatedPhone;
 		}
 	}
 };
