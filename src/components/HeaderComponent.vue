@@ -1,6 +1,6 @@
 <template lang="html">
   	<header>
-		<div class="header-main-info col-8 d-flex flex-column align-items-start">
+		<div class="header-main-info col-12 col-sm-12 col-md-8 d-flex flex-column align-items-start">
 			<h1>{{headerTitle}}</h1>
 			<h2 class="d-flex flex-row">
         <span v-for="subtitle in headerSubTitles" 
@@ -9,7 +9,7 @@
         </span>
       </h2>
 		</div>
-		<div class="header-side-info col-4 d-flex flex-column align-items-end justify-content-center">
+		<div class="header-side-info col-12 col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-sm-start align-items-md-end justify-content-center">
 			<span class="header-side-info__email">
 				{{headerEmail}}
 			</span>
