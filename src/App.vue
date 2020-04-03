@@ -1,28 +1,22 @@
 <template>
   <main id="app" class="container">
     <Header class="row"/>
-    <Article class="row" title="Resumo">
-      <p>
-        Atualmente trabalho como líder de projetos em uma equipe
-        de desenvolvimento ágil. Venho atuado principalmente com
-        projetos voltados ao setor de logística.
-        Graduado em Sistemas de Informação e Mestre em Ciência
-        da Computação (Interação Humano-Computador) pela Universidade
-        Federal Fluminense.
-      </p>
-    </Article>
+    <ResumeeSection class="row"/> 
+    <ExperienceSection class="row"/>
   </main>
 </template>
 
 <script>
 import Header from "@/components/HeaderComponent";
-import Article from "@/components/ArticleComponent";
+import ResumeeSection from "@/components/ResumeeSectionComponent";
+import ExperienceSection from "@/components/ExperienceSectionComponent";
 
 export default {
 	name: "App",
 	components: {
-		Header,
-		Article
+    Header,
+    ResumeeSection,
+		ExperienceSection
 	}
 };
 </script>
@@ -42,11 +36,16 @@ body {
 	font-family: "Roboto", Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	padding: 3em 3em;
+	padding-top: 3em;
 	width: 100%;
 	height: 100%;
 	color: var(--main-text-color);
 	background-color: var(--container-bg-color);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media only screen and (min-width: 800px) {
+	#app {
+		padding: 3em 3em;
+	}
 }
 </style>

@@ -2,7 +2,7 @@
 	<header>
 		<div class="header-main-info col-12 col-sm-12 col-md-8 d-flex flex-column align-items-start">
 			<h1>{{headerTitle}}</h1>
-			<h2 class="d-flex flex-row">
+			<h2 class="d-flex flex-column flex-sm-column flex-md-row">
 		<span v-for="subtitle in headerSubTitles"
 			v-bind:key="subtitle">
 			{{subtitle}}
@@ -56,10 +56,6 @@ h2,
 span {
 	font-weight: 300;
 }
-h2 > span:not(:first-child)::before {
-	content: "|";
-	margin: 0 0.25em 0 0.5em;
-}
 header {
 	padding: 0 1em;
 }
@@ -69,5 +65,11 @@ header::after {
 	background-color: var(--main-text-color);
 	width: 100%;
 	margin: 0.5em 1em;
+}
+@media only screen and (min-width: 800px) {
+	h2 > span:not(:first-child)::before {
+		content: "|";
+		margin: 0 0.25em 0 0.5em;
+	}
 }
 </style>
