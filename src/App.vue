@@ -1,9 +1,9 @@
 <template>
-  <main id="app" class="container">
-    <Header class="row"/>
-    <ResumeeSection class="row"/> 
-    <ExperienceSection class="row"/>
-  </main>
+	<main id="app" class="container">
+		<Header class="row"/>
+		<ResumeeSection class="row"/> 
+		<ExperienceSection class="row"/>
+	</main>
 </template>
 
 <script>
@@ -14,8 +14,8 @@ import ExperienceSection from "@/components/ExperienceSectionComponent";
 export default {
 	name: "App",
 	components: {
-    Header,
-    ResumeeSection,
+		Header,
+		ResumeeSection,
 		ExperienceSection
 	}
 };
@@ -46,6 +46,12 @@ body {
 @media only screen and (min-width: 800px) {
 	#app {
 		padding: 3em 3em;
+	}
+}
+
+@media only print {
+	#app {
+		padding: 1em 0;
 	}
 }
 </style>

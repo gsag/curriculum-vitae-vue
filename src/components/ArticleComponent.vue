@@ -1,12 +1,12 @@
 <template lang="html">
-    <section>
-        <div class="col">
-        <article>
-            <h2>{{title}}</h2>
-            <slot></slot>
-        </article>
-        </div>
-    </section>    
+	<section>
+		<div class="col">
+		<article>
+			<h2>{{title}}</h2>
+			<slot></slot>
+		</article>
+		</div>
+	</section>    
 </template>
 
 <script>
