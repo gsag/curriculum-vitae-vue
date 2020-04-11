@@ -4,7 +4,8 @@
     <ResumeeSection class="row"/>
     <ExperienceSection class="row"/>
     <AcademicSection class="row"/>
-	<SkillsSection class="row"/>
+		<SkillsSection class="row"/>
+		<ExtraInfoSection class="row"/>
   </main>
 </template>
 
@@ -14,6 +15,7 @@ import ResumeeSection from "@/components/ResumeeSectionComponent";
 import ExperienceSection from "@/components/ExperienceSectionComponent";
 import AcademicSection from "@/components/AcademicSectionComponent";
 import SkillsSection from "@/components/SkillsSectionComponent";
+import ExtraInfoSection from "@/components/ExtraInfoSectionComponent";
 
 export default {
 	name: "App",
@@ -23,6 +25,7 @@ export default {
 		ExperienceSection,
 		AcademicSection,
 		SkillsSection,
+		ExtraInfoSection,
 	}
 };
 </script>
