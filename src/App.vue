@@ -1,22 +1,25 @@
 <template>
-	<main id="app" class="container">
-		<Header class="row"/>
-		<ResumeeSection class="row"/> 
-		<ExperienceSection class="row"/>
-	</main>
+  <main id="app" class="container">
+    <Header class="row"/>
+    <ResumeeSection class="row"/>
+    <ExperienceSection class="row"/>
+    <AcademicSection class="row"/>
+  </main>
 </template>
 
 <script>
 import Header from "@/components/HeaderComponent";
 import ResumeeSection from "@/components/ResumeeSectionComponent";
 import ExperienceSection from "@/components/ExperienceSectionComponent";
+import AcademicSection from "@/components/AcademicSectionComponent";
 
 export default {
 	name: "App",
 	components: {
 		Header,
 		ResumeeSection,
-		ExperienceSection
+		ExperienceSection,
+		AcademicSection
 	}
 };
 </script>
@@ -38,7 +41,6 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	padding-top: 3em;
 	width: 100%;
-	height: 100%;
 	color: var(--main-text-color);
 	background-color: var(--container-bg-color);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
