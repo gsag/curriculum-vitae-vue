@@ -4,6 +4,7 @@
     <ResumeeSection class="row"/>
     <ExperienceSection class="row"/>
     <AcademicSection class="row"/>
+	<SkillsSection class="row"/>
   </main>
 </template>
 
@@ -12,6 +13,7 @@ import Header from "@/components/HeaderComponent";
 import ResumeeSection from "@/components/ResumeeSectionComponent";
 import ExperienceSection from "@/components/ExperienceSectionComponent";
 import AcademicSection from "@/components/AcademicSectionComponent";
+import SkillsSection from "@/components/SkillsSectionComponent";
 
 export default {
 	name: "App",
@@ -19,7 +21,8 @@ export default {
 		Header,
 		ResumeeSection,
 		ExperienceSection,
-		AcademicSection
+		AcademicSection,
+		SkillsSection,
 	}
 };
 </script>
@@ -29,6 +32,9 @@ export default {
 	--main-text-color: #343a40;
 	--main-bg-color: #ededed;
 	--container-bg-color: #fff;
+	--grey-scale-100: #F5F5F5;
+	--grey-scale-300: #E0E0E0;
+	--grey-scale-500: #9E9E9E;
 }
 html,
 body {
@@ -52,8 +58,14 @@ body {
 }
 
 @media only print {
+	html,
+	body{
+		background-color: var(--container-bg-color);
+		font-size: 100%;
+	}
 	#app {
 		padding: 1em 0;
+		box-shadow: none;
 	}
 }
 </style>
