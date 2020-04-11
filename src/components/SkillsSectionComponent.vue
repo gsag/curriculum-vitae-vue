@@ -1,55 +1,55 @@
 <template>
-  <section>
-    <Article title="Especialidades" class="col-12">
-      <p>
-        Desenvolvimento Web, Desenvolvimento Front-end, Desenvolvimento de software, Design
-        de interfaces front-end responsivas, Desenvolvimento de websites, Avaliação de
-        Usabilidade, Experiência do Usuário e Acessibilidade.
-      </p>
-    </Article>
+	<section>
+		<Article title="Especialidades" class="col-12">
+			<p>
+				Desenvolvimento Web, Desenvolvimento Front-end, Desenvolvimento de software, Design
+				de interfaces front-end responsivas, Desenvolvimento de websites, Avaliação de
+				Usabilidade, Experiência do Usuário e Acessibilidade.
+			</p>
+		</Article>
 
-    <Article title="Competências" class="col-12">
-      <p>Fluência linguística: Inglês Intermediário, Italiano Básico, Português Nativo.</p>
-      <section class="row d-flex flex-row">
-        <div class="col text-center skill-box skill-box__basic">Básico</div>
-        <div class="col text-center skill-box skill-box__intermed">Intermediário</div>
-        <div class="col text-center skill-box skill-box__advanced">Avançado</div>
-      </section>
+		<Article title="Competências" class="col-12">
+			<p>Fluência linguística: Inglês Intermediário, Italiano Básico, Português Nativo.</p>
+			<section class="row d-flex flex-row">
+				<div class="col text-center skill-box skill-box__basic">Básico</div>
+				<div class="col text-center skill-box skill-box__intermed">Intermediário</div>
+				<div class="col text-center skill-box skill-box__advanced">Avançado</div>
+			</section>
 
-      <ArticleTopic title="Desenvolvimento Front-end" class="row row-fix">
-        <section class="d-flex flex-row flex-wrap">
-          <div
-            v-for="skill in frontendSkills"
-            v-bind:key="skill.name"
-            class="col-2 text-center"
-            :class="addSkillLevelStyle(skill.level)"
-          >{{skill.name}}</div>
-        </section>
-      </ArticleTopic>
+			<ArticleTopic title="Desenvolvimento Front-end" class="row row-fix">
+				<section class="d-flex flex-row flex-wrap">
+					<div
+						v-for="skill in frontendSkills"
+						v-bind:key="skill.name"
+						class="col-2 text-center"
+						:class="addSkillLevelStyle(skill.level)"
+					>{{skill.name}}</div>
+				</section>
+			</ArticleTopic>
 
-      <ArticleTopic title="Desenvolvimento Back-end" class="row row-fix">
-        <section class="d-flex flex-row flex-wrap">
-          <div
-            v-for="skill in backendSkills"
-            v-bind:key="skill.name"
-            class="col-2 text-center"
-            :class="addSkillLevelStyle(skill.level)"
-          >{{skill.name}}</div>
-        </section>
-      </ArticleTopic>
+			<ArticleTopic title="Desenvolvimento Back-end" class="row row-fix">
+				<section class="d-flex flex-row flex-wrap">
+					<div
+						v-for="skill in backendSkills"
+						v-bind:key="skill.name"
+						class="col-2 text-center"
+						:class="addSkillLevelStyle(skill.level)"
+					>{{skill.name}}</div>
+				</section>
+			</ArticleTopic>
 
-      <ArticleTopic title="Outros" class="row row-fix">
-        <section class="d-flex flex-row flex-wrap">
-          <div
-            v-for="skill in otherSkills"
-            v-bind:key="skill.name"
-            class="col-2 text-center"
-            :class="addSkillLevelStyle(skill.level)"
-          >{{skill.name}}</div>
-        </section>
-      </ArticleTopic>
-    </Article>
-  </section>
+			<ArticleTopic title="Outros" class="row row-fix">
+				<section class="d-flex flex-row flex-wrap">
+					<div
+						v-for="skill in otherSkills"
+						v-bind:key="skill.name"
+						class="col-2 text-center"
+						:class="addSkillLevelStyle(skill.level)"
+					>{{skill.name}}</div>
+				</section>
+			</ArticleTopic>
+		</Article>
+	</section>
 </template>
 
 <script>

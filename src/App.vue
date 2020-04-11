@@ -1,9 +1,9 @@
 <template>
-  <main id="app" class="container">
-    <Header class="row"/>
-    <ResumeeSection class="row"/>
-    <ExperienceSection class="row"/>
-    <AcademicSection class="row"/>
+	<main id="app" class="container">
+	<Header class="row"/>
+	<ResumeeSection class="row"/>
+	<ExperienceSection class="row"/>
+	<AcademicSection class="row"/>
 		<SkillsSection class="row"/>
 		<ExtraInfoSection class="row"/>
   </main>
