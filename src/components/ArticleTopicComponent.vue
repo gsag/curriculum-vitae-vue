@@ -21,8 +21,8 @@ export default {
 	name: "ArticleTopic",
 	props: ["title", "subTitle", "aside"],
 	methods: {
-		fixColumnOnRow: (asideInfo) => {
-			return (!!asideInfo) ? "col-md-8" : "";
+		fixColumnOnRow: asideInfo => {
+			return asideInfo ? "col-md-8" : "";
 		}
 	}
 };
