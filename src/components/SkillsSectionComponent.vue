@@ -161,17 +161,17 @@ export default {
 					level: "intermed"
 				},
 				{
-					name: "Testes automatizados",
-					level: "intermed"
-				},
-				{
 					name: "Docker",
 					level: "basic"
 				},
 				{
 					name: "RabbitMQ",
 					level: "basic"
-				}
+				},
+				{
+					name: "Dart / Flutter",
+					level: "basic"
+				},
 			]
 		};
 	},
