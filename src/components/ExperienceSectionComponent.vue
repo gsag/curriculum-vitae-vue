@@ -3,7 +3,7 @@
 		<ul class="list-unstyled">
 			<li class="media">
 				<ArticleTopic
-					title="Minds at Work / BLLOG"
+					title="Minds at Work / BLLOG Tecnologia da Informação"
 					subTitle="Líder de Projetos / Desenvolvedor Web"
 					aside="Abr. 2019 ~ atual"
 					class="row"
@@ -11,7 +11,7 @@
 					<ul>
 						<li
 							class="text-justify"
-						>Jan. 2020 - Transferência da empresa Minds at Works para BLLOG com atuação e cargo mantidos.</li>
+						>Jan. 2020 - Transferência da empresa Minds at Works para BLLOG com atuação e cargo mantidos (empresas do mesmo grupo).</li>
 						<li
 							class="text-justify"
 						>Atuação em liderança de projetos de TI voltados para o setor de logística. Atuando em projetos de logística da Ambev utilizando plataforma .NET, Angular, SQL Server, linguagem C# e Typescript.</li>

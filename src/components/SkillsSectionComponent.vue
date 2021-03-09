@@ -2,9 +2,9 @@
 	<section>
 		<Article title="Especialidades" class="col-12">
 			<p>
-				Desenvolvimento Web, Desenvolvimento Front-end, Desenvolvimento de software, Design
+				Desenvolvimento Web, Desenvolvimento de software, Design
 				de interfaces front-end responsivas, Desenvolvimento de websites, Avaliação de
-				Usabilidade, Experiência do Usuário e Acessibilidade.
+				Usabilidade e Acessibilidade.
 			</p>
 		</Article>
 
@@ -73,6 +73,10 @@ export default {
 					level: "advanced"
 				},
 				{
+					name: "WCAG/ARIA",
+					level: "intermed"
+				},
+				{
 					name: "Javascript",
 					level: "intermed"
 				},
@@ -97,8 +101,12 @@ export default {
 					level: "intermed"
 				},
 				{
-					name: "Angular",
+					name: "AngularJs",
 					level: "basic"
+				},
+				{
+					name: "Angular",
+					level: "intermed"
 				},
 				{
 					name: "VueJS",
@@ -106,6 +114,26 @@ export default {
 				},
 				{
 					name: "NPM",
+					level: "basic"
+				},
+				{
+					name: "Webpack",
+					level: "basic"
+				},
+				{
+					name: "Jasmine",
+					level: "basic"
+				},
+				{
+					name: "Karma",
+					level: "basic"
+				},
+				{
+					name: "Jest",
+					level: "basic"
+				},
+				{
+					name: "Websockets",
 					level: "basic"
 				}
 			],
@@ -143,7 +171,7 @@ export default {
 					level: "intermed"
 				},
 				{
-					name: "MySQL DB",
+					name: "Azure Services",
 					level: "basic"
 				}
 			],
